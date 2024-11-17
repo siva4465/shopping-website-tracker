@@ -41,10 +41,6 @@ def product_detail(product_id):
     cursor.close()
     conn.close()
 
-    # Handle case where product is not found
-    if not product:
-        return render_template('404.html'), 404
-
     return render_template('product_detail.html', product=product)
 
 if __name__ == '__main__':
