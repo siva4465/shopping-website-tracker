@@ -11,7 +11,7 @@
         <h1>{{ product.name }}</h1>
         <img src="{{ product.image_url }}" alt="{{ product.name }}">
         <p><strong>Description:</strong> {{ product.description }}</p>
-        <p><strong>Price:</strong> ${{ product.price }}</p>
+        <p><strong>Price: {{ product.price }}</strong></p>
         <a href="/">Back to Home</a>
     </div>
 </body>
